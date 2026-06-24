@@ -1,91 +1,141 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Al Arifeen Laptops and Accessories</title>
+<title>Al Arifeen Laptops and Accessories</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+<style>
 
-        /* NAVBAR */
-        <div style="text-align:center; margin-top:20px;">
-    <input type="text" placeholder="Search Products..."
-    style="padding:10px; width:250px; border-radius:5px;">
-</div>
-        .navbar {
-            background-color: darkblue;
-            padding: 15px;
-            text-align: center;
-        }
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f4f4f4;
+    margin:0;
+    padding:0;
+}
 
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-size: 18px;
-        }
+/* NAVBAR */
+.navbar{
+    background-color:darkblue;
+    padding:15px;
+    text-align:center;
+}
 
-        /* LOGO */
-        .logo {
-            text-align: center;
-            margin-top: 20px;
-        }
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+}
 
-        .logo img {
-            width: 180px;
-        }
+/* LOGO */
+.logo{
+    text-align:center;
+    margin-top:20px;
+}
 
-        h1 {
-            text-align: center;
-            color: darkblue;
-        }
+.logo img{
+    width:180px;
+}
 
-        p {
-            text-align: center;
-            font-size: 18px;
-        }
+/* SEARCH BAR */
+.search-box{
+    text-align:center;
+    margin-top:20px;
+}
 
-        h2 {
-            color: green;
-            text-align: center;
-            margin-top: 30px;
-        }
+.search-box input{
+    width:300px;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
 
-        .product-card {
-            background: white;
-            margin: 10px auto;
-            padding: 15px;
-            width: 300px;
-            border-radius: 10px;
-            text-align: center;
-        }
+h1{
+    text-align:center;
+    color:darkblue;
+}
 
-        .whatsapp-btn {
-            background-color: green;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            font-size: 18px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
+h2{
+    text-align:center;
+    color:green;
+}
 
-        .contact {
-            text-align: center;
-            margin-top: 20px;
-        }
+p{
+    text-align:center;
+}
 
-        footer {
-            text-align: center;
-            color: gray;
-            margin-top: 30px;
-            padding: 10px;
-        }
-    </style>
+/* PRODUCT CARDS */
+.products{
+    text-align:center;
+}
+
+.product-card{
+    background:white;
+    width:280px;
+    display:inline-block;
+    margin:15px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:scale(1.05);
+}
+
+.price{
+    color:green;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.whatsapp-btn{
+    background:green;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+
+/* SOCIAL */
+.social{
+    text-align:center;
+    margin-top:20px;
+}
+
+.social a{
+    text-decoration:none;
+    margin:10px;
+    font-size:18px;
+}
+
+/* FIXED WHATSAPP */
+.fixed-whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:green;
+    color:white;
+    padding:15px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px;
+    color:gray;
+}
+
+</style>
 </head>
 
 <body>
@@ -102,55 +152,140 @@
     <img src="logo.png" alt="Logo">
 </div>
 
+<!-- SEARCH -->
+<div class="search-box">
+    <input type="text" placeholder="Search Products">
+</div>
+
 <!-- TITLE -->
 <h1>Al Arifeen Laptops and Accessories</h1>
 
 <p><b>Quality Products | Best Prices | Trusted Service</b></p>
 
-<p>We deal in laptops, chargers, and all computer accessories at best prices.</p>
+<p>We deal in laptops, chargers and all computer accessories at best prices.</p>
+
+<!-- ABOUT -->
+<h2>About Us</h2>
+
+<p>
+Al Arifeen Laptops and Accessories provides quality laptops,
+chargers, accessories and computer products at affordable prices.
+Customer satisfaction is our first priority.
+</p>
 
 <!-- PRODUCTS -->
 <h2 id="products">Our Products</h2>
 
+<div class="products">
+
 <div class="product-card">
     <h3>Dell Laptop</h3>
     <p>High Performance Laptop</p>
+    <div class="price">Rs. 85,000</div>
+    <br>
+    <a href="https://wa.me/923455207209">
+        <button class="whatsapp-btn">Buy Now</button>
+    </a>
 </div>
 
 <div class="product-card">
     <h3>HP Laptop</h3>
     <p>Best for Students</p>
+    <div class="price">Rs. 78,000</div>
+    <br>
+    <a href="https://wa.me/923455207209">
+        <button class="whatsapp-btn">Buy Now</button>
+    </a>
 </div>
 
 <div class="product-card">
     <h3>Laptop Charger</h3>
     <p>Original Quality</p>
+    <div class="price">Rs. 2,500</div>
+    <br>
+    <a href="https://wa.me/923455207209">
+        <button class="whatsapp-btn">Buy Now</button>
+    </a>
+</div>
+
 </div>
 
 <!-- FEATURED -->
 <h2>Featured Laptops</h2>
 
 <div style="text-align:center;">
-    <img src="https://m.media-amazon.com/images/I/61Dw5Z8LzJL._AC_SL1500_.jpg" width="200">
-    <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._AC_SL1500_.jpg" width="200">
-    <img src="https://m.media-amazon.com/images/I/61Qe0euJJZL._AC_SL1500_.jpg" width="200">
+
+<img src="https://m.media-amazon.com/images/I/61Dw5Z8LzJL._AC_SL1500_.jpg" width="220">
+
+<img src="https://m.media-amazon.com/images/I/71TPda7cwUL._AC_SL1500_.jpg" width="220">
+
+<img src="https://m.media-amazon.com/images/I/61Qe0euJJZL._AC_SL1500_.jpg" width="220">
+
+</div>
+
+<!-- REVIEWS -->
+<h2>Customer Reviews</h2>
+
+<div class="products">
+
+<div class="product-card">
+    ⭐⭐⭐⭐⭐
+    <p>Excellent Laptop Quality</p>
+    <b>Ali Khan</b>
+</div>
+
+<div class="product-card">
+    ⭐⭐⭐⭐⭐
+    <p>Fast Delivery and Great Service</p>
+    <b>Ahmad</b>
+</div>
+
 </div>
 
 <!-- CONTACT -->
 <h2 id="contact">Contact Us</h2>
 
 <div class="contact">
-    <a href="https://wa.me/923455207209">
-        <button class="whatsapp-btn">Order on WhatsApp</button>
-    </a>
 
-    <p>📞 WhatsApp: 923455207209</p>
-    <p>📍 Location: Near State Life Building, Islam Market, Dera Ismail Khan</p>
+<a href="https://wa.me/923455207209">
+<button class="whatsapp-btn">
+Order on WhatsApp
+</button>
+</a>
+
+<p>📞 WhatsApp: 923455207209</p>
+
+<p>
+📍 Location: Near State Life Building,
+Islam Market, Dera Ismail Khan
+</p>
+
 </div>
+
+<!-- SOCIAL MEDIA -->
+<div class="social">
+
+<h2>Follow Us</h2>
+
+<a href="#">Facebook</a> |
+
+<a href="#">Instagram</a> |
+
+<a href="#">TikTok</a>
+
+</div>
+
+<!-- FIXED WHATSAPP -->
+<a class="fixed-whatsapp"
+href="https://wa.me/923455207209">
+WhatsApp
+</a>
 
 <!-- FOOTER -->
 <footer>
-    © 2026 Al Arifeen Laptops and Accessories | All Rights Reserved
+© 2026 Al Arifeen Laptops and Accessories
+<br>
+All Rights Reserved
 </footer>
 
 </body>
